@@ -53,14 +53,6 @@ class Tests {
         graph.connect("D", "F")
         graph.connect("C", "F")
         graph.connect("G", "H")
-        assertEquals(0, graph.dfs("A", "A"))
-        assertEquals(1, graph.dfs("A", "B"))
-        assertEquals(2, graph.dfs("A", "C"))
-        assertEquals(2, graph.dfs("B", "F"))
-        assertEquals(3, graph.dfs("A", "F"))
-        assertEquals(2, graph.dfs("E", "F"))
-        assertEquals(3, graph.dfs("E", "D"))
-        assertEquals(1, graph.dfs("H", "G"))
-        assertEquals(-1, graph.dfs("H", "A"))
+
     }
 }
